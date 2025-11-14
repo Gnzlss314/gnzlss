@@ -4,46 +4,140 @@
     <meta charset="UTF-8">
     <title>My First Website</title>
     <style>
+        /* サイト全体の基本設定 */
         body {
-            font-family: sans-serif;
-            margin: 40px;
-            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                         "Segoe UI", sans-serif;
+            margin: 0;
+            background: #f5f5f7;
+            color: #222;
         }
+
+        /* 画面中央に白いカードを置くイメージ */
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
         header {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            margin-bottom: 8px;
         }
-        .content {
-            margin-top: 20px;
-            padding: 20px;
+
+        /* サブタイトル */
+        .subtitle {
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        /* 上のメニュー（トップ / 日記） */
+        nav {
+            margin-bottom: 24px;
+            padding: 8px 12px;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 999px;
+            display: inline-flex;
+            gap: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
-        footer {
-            margin-top: 40px;
-            text-align: center;
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 中身の白いカード */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            margin-bottom: 24px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .muted {
             color: #777;
+            font-size: 12px;
+        }
+
+        /* ボタン風リンク */
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: #007aff;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <header>はじめてのホームページ</header>
- <nav>
-        <a href="index.html">トップ</a> |
-        <a href="diary.html">日記</a>
-    </nav>
-    <div class="content">
-        <h2>こんにちは！！！！</h2>
-        <p>こんにちは</p>
+    <div class="wrapper">
+        <header>はじめてのホームページ</header>
+        <div class="subtitle">My First Website</div>
+
+        <!-- ナビゲーション -->
+        <nav>
+            <a href="index.html">トップ</a>
+            <span>｜</span>
+            <a href="diary.html">日記</a>
+        </nav>
+
+        <!-- こんにちはカード -->
+        <div class="card">
+            <h2>こんにちは！！！！</h2>
+            <p>ここに挨拶や、サイトの簡単な説明を書きます。</p>
+        </div>
+
+        <!-- サイトへ移動カード -->
+        <div class="card">
+            <h2>外部サイトへ</h2>
+            <p>きんちゃんラーメンのサイトに移動するリンクです。</p>
+            <a class="btn" href="https://www.kinchan.co.jp" target="_blank">
+                サイトへ移動
+            </a>
+        </div>
+
+        <!-- まえがきカード -->
+        <div class="card">
+            <h2>まえがき</h2>
+            <h3>明日書きます</h3>
+            <p>ここに、これから書きたいことやメモを書いておくこともできます。</p>
+        </div>
+
+        <footer>
+            Since 2025.11.14
+        </footer>
     </div>
-<hr>
-   <a href="https://www.kinchan.co.jp/item_detail.php?id=2">
-    <button>サイトへ移動</button>
-</a>
-<hr>
-<h2>まえがき</h2>
-<h3>明日書きます</h3>
-    <footer> Since 2025.11.14 </footer>
 </body>
 </html>
