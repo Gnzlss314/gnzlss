@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <title>My First Website</title>
     <style>
-        /* サイト全体の基本設定 */
+        /* 全体の基本設定 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
                          "Segoe UI", sans-serif;
             margin: 0;
-            background: #f5f5f7;
-            color: #222;
+            background: #fff7fb;  /* 超淡いピンク */
+            color: #222222;
         }
 
-        /* 画面中央に白いカードを置くイメージ */
         .wrapper {
             max-width: 800px;
             margin: 40px auto;
@@ -22,30 +21,31 @@
 
         header {
             font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 8px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 4px;
         }
 
-        /* サブタイトル */
         .subtitle {
-            color: #666;
-            margin-bottom: 24px;
+            text-align: center;
+            color: #5b647c;
+            margin-bottom: 28px;
         }
 
-        /* 上のメニュー（トップ / 日記） */
+        /* 上部ナビ */
         nav {
-            margin-bottom: 24px;
-            padding: 8px 12px;
-            background: white;
-            border-radius: 999px;
-            display: inline-flex;
-            gap: 12px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 12px 0;
+            border-top: 1px solid #e5d9e8;
+            border-bottom: 1px solid #e5d9e8;
+            margin-bottom: 28px;
         }
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #333333;
             font-size: 14px;
         }
 
@@ -53,90 +53,107 @@
             text-decoration: underline;
         }
 
-        /* 中身の白いカード */
+        /* コンテンツのカード（角丸ゼロでシャープ） */
         .card {
-            background: white;
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-            margin-bottom: 24px;
+            background: #ffffff;
+            border: 1px solid #e3d9e8;
+            padding: 20px 22px;
+            margin-bottom: 20px;
         }
 
         .card h2 {
-            margin-top: 0;
-            font-size: 20px;
-            margin-bottom: 8px;
+            margin: 0 0 8px 0;
+            font-size: 18px;
         }
 
         .card h3 {
-            margin-bottom: 8px;
+            margin: 4px 0 8px 0;
+            font-size: 15px;
         }
 
-        .muted {
-            color: #777;
-            font-size: 12px;
-        }
-
-        /* ボタン風リンク */
-        .btn {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 8px 14px;
-            border-radius: 999px;
-            background: #007aff;
-            color: white;
-            text-decoration: none;
+        .card p {
+            margin: 0;
+            line-height: 1.7;
             font-size: 14px;
         }
 
+        /* ボタン（角丸ほぼなし） */
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 18px;
+            background: #2f6df6;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            border: none;
+        }
+
         .btn:hover {
-            opacity: 0.9;
+            background: #2453c0;
         }
 
         footer {
-            margin-top: 24px;
+            margin-top: 28px;
             text-align: center;
             font-size: 12px;
-            color: #888;
+            color: #8c8c95;
+        }
+
+        /* スマホで少し余白を詰める */
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 24px auto;
+            }
+            nav {
+                gap: 24px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <header>はじめてのホームページ</header>
-    
+        <div class="subtitle">My First Website</div>
 
         <!-- ナビゲーション -->
         <nav>
             <a href="index.html">トップ</a>
-            <span>｜</span>
             <a href="diary.html">日記</a>
         </nav>
 
-        <!-- こんにちはカード -->
+        <!-- 1つめのカード：あいさつ -->
         <div class="card">
             <h2>こんにちは！！！！</h2>
-
+            <p>
+                はじめまして、このサイトに来てくれてありがとうございます。<br>
+                ここは、日記やメモ、リンクなどをゆるく置いていく場所です。
+            </p>
         </div>
 
-        <!-- サイトへ移動カード -->
+        <!-- 2つめのカード：外部サイト -->
         <div class="card">
-         
+            <h2>外部サイトへ</h2>
+            <p>
+                どこかのサイトを紹介したいときに使うカードです。<br>
+                下のボタンから外部サイトへ移動できます。
+            </p>
             <a class="btn" href="https://www.kinchan.co.jp" target="_blank">
                 サイトへ移動
             </a>
         </div>
 
-        <!-- まえがきカード -->
+        <!-- 3つめのカード：まえがき -->
         <div class="card">
             <h2>まえがき</h2>
             <h3>明日書きます</h3>
-         
+            <p>
+                ここには、このサイトについての説明や、これから書きたいことのメモなどを
+                少しずつ追加していく予定です。
+            </p>
         </div>
 
-        <footer>
-            Since 2025.11.14
-        </footer>
+        <footer>Since 2025.11.14</footer>
     </div>
 </body>
 </html>
