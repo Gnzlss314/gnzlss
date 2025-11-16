@@ -2,73 +2,127 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>日記 - My Site</title>
+    <title>日記 - My First Website</title>
     <style>
         body {
-            font-family: sans-serif;
-            margin: 40px;
-            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                         "Segoe UI", sans-serif;
+            margin: 0;
+            background: #fff7fb;  /* 超淡いピンク */
+            color: #222222;
         }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
         header {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav {
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        nav a {
-            margin-right: 10px;
-            text-decoration: none;
-        }
-        .content {
-            margin-top: 10px;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .entry {
-            margin-bottom: 24px;
-        }
-        .entry h2 {
-            font-size: 18px;
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
             margin-bottom: 4px;
         }
-        .entry .date {
-            color: #666;
+
+        .subtitle {
+            text-align: center;
+            color: #5b647c;
+            margin-bottom: 28px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 12px 0;
+            border-top: 1px solid #e5d9e8;
+            border-bottom: 1px solid #e5d9e8;
+            margin-bottom: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .entry {
+            background: #ffffff;
+            border: 1px solid #e3d9e8;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+        }
+
+        .entry-title {
+            font-size: 17px;
+            margin: 0 0 4px 0;
+        }
+
+        .entry-date {
             font-size: 12px;
+            color: #8c8c95;
             margin-bottom: 8px;
+        }
+
+        .entry p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        footer {
+            margin-top: 28px;
+            text-align: center;
+            font-size: 12px;
+            color: #8c8c95;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 24px auto;
+            }
+            nav {
+                gap: 24px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>日記</header>
+    <div class="wrapper">
+        <header>日記</header>
+        <div class="subtitle">Diary</div>
 
-    <!-- トップへ戻るナビ -->
-    <nav>
-        <a href="index.html">← トップページへ戻る</a>
-    </nav>
+        <nav>
+            <a href="index.html">トップ</a>
+            <a href="diary.html">日記</a>
+        </nav>
 
-    <div class="content">
+        <!-- 1つめの日記 -->
         <div class="entry">
-            <h2>最初の日記</h2>
-            <div class="date">2025-11-14</div>
+            <h2 class="entry-title">GitHub Pages でサイトを公開した</h2>
+            <div class="entry-date">2025-11-16</div>
             <p>
-                おはようございます！<br>
-                おはようございます！
+                はじめて自分のホームページをインターネットに公開した。
+                まだ中身は少ないけれど、これから少しずつ育てていきたい。
             </p>
         </div>
 
-        <!-- 日記を増やすときは、このブロックをコピーして使う -->
+        <!-- 2つめの日記（増やすときはこのブロックをコピー） -->
         <div class="entry">
-            <h2>おはようございます2</h2>
-            <div class="date">2025-11-15</div>
+            <h2 class="entry-title">デザインをピンクにした</h2>
+            <div class="entry-date">2025-11-16</div>
             <p>
-                ホームページを作ってみた。授業をサボって夜まで寝て起きて飲みに出かけた。<br>
-                このホームページについてのあれこれはトップページにあとで書くので、一旦ここは日記とか雑感だけ書いていきます。
+                背景をうすいピンクにしてみた。思ったよりも柔らかい雰囲気になって、
+                日記を書く場所としてはちょうどいい気がする。
             </p>
         </div>
+
+        <footer>Since 2025.11.14</footer>
     </div>
 </body>
 </html>
