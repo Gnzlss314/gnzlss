@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リンク - 回転機関</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                         "Segoe UI", sans-serif;
+            margin: 0;
+            background: #fff7fb;  /* 超淡いピンク */
+            color: #222222;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        header {
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #5b647c;
+            margin-bottom: 28px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 12px 0;
+            border-top: 1px solid #e5d9e8;
+            border-bottom: 1px solid #e5d9e8;
+            margin-bottom: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .entry {
+            background: #ffffff;
+            border: 1px solid #e3d9e8;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+        }
+
+        .entry-title {
+            font-size: 17px;
+            margin: 0 0 4px 0;
+        }
+
+        .entry-date {
+            font-size: 12px;
+            color: #8c8c95;
+            margin-bottom: 8px;
+        }
+
+        .entry p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        footer {
+            margin-top: 28px;
+            text-align: center;
+            font-size: 12px;
+            color: #8c8c95;
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 24px auto;
+            }
+            nav {
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>日記</header>
+        <div class="subtitle">Diary</div>
+
+        <nav>
+            <a href="index.html">トップ</a>
+            <a href="diary.html">日記</a>
+            <a href="profile.html">プロフィール</a>
+        </nav>
+
+        <!-- 1つめの日記 -->
+        <div class="entry">
+            <h2 class="entry-title">はじめました</h2>
+            <div class="entry-date">2025-11-14</div>
+            <p>
+                こんにちは！こんにちは！
+            </p>
+        </div>
+
+        <!-- 2つめの日記（増やすときはこのブロックをコピー） -->
+        <div class="entry">
+            <h2 class="entry-title">デザインをピンクにした</h2>
+            <div class="entry-date">2025-11-15</div>
+            <p>
+               背景がピンクになりました
+            </p>
+        </div>
+
+        <div class="entry">
+            <h2 class="entry-title">ひゃくえむ。を観ました</h2>
+            <div class="entry-date">2025-11-16</div>
+            <p>
+                ３日前ぐらいに『ひゃくえむ。』の映画を観に行ったんですが、めちゃくちゃ良かった。監督の岩井澤健治さん、
+                ５年前に『音楽』で話題になった人ですね。当時浪人生で、予備校サボって観に行ったのを思い出す。
+                当時半年ぐらい日記をつけていた時期があって、『音楽』観に行った日のも残ってました。で、これを機に
+                当時の日記を見返してると、どこにも出さずiPhoneのメモ帳に書いてただけなのに「お久しぶりです皆さん」とか
+                書いてるんですよね、変。<br>
+                『ひゃくえむ。』僕が観に行った日が最終日だと思ってたんですが、行った映画館の最終日ってだけでした。まだ観てない
+                方はぜひ。『音楽』もアマプラとかで観れるみたいなのでぜひ。
+            
+            </p>
+        </div>
+
+        <div class="entry">
+            <h2 class="entry-title">懐古</h2>
+            <div class="entry-date">2025-11-17</div>
+            <p>
+                アクセスカウンターと掲示板的なものを外付けで作りました。踏み逃げ禁止です。カウンターはいいとして、掲示板はなんか違う！！！！
+                GitHubでサイト作ってるんですが、仕組み的にBBSをサイト内で作れないんですよね。いつかサーバーとります。
+            
+            
+            </p>
+        </div>
+
+        <footer>Since 2025.11.14</footer>
+    </div>
+</body>
+</html>
