@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>戦闘画面</title>
+    <style>
+        /* 全体の基本設定 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                         "Segoe UI", sans-serif;
+            margin: 0;
+            background: #fff7fb;  /* 超淡いピンク */
+            color: #222222;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+
+        header {
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #5b647c;
+            margin-bottom: 28px;
+        }
+
+        /* 上部ナビ */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 12px 0;
+            border-top: 1px solid #e5d9e8;
+            border-bottom: 1px solid #e5d9e8;
+            margin-bottom: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* コンテンツのカード（角丸ゼロでシャープ） */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e3d9e8;
+            padding: 20px 22px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin: 0 0 8px 0;
+            font-size: 18px;
+        }
+
+        .card h3 {
+            margin: 4px 0 8px 0;
+            font-size: 15px;
+        }
+
+        .card p {
+            margin: 0;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        /* ボタン（角丸ほぼなし） */
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 18px;
+            background: #2f6df6;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            border: none;
+        }
+
+        .btn:hover {
+            background: #2453c0;
+        }
+
+        footer {
+            margin-top: 28px;
+            text-align: center;
+            font-size: 12px;
+            color: #8c8c95;
+        }
+
+        /* スマホで少し余白を詰める */
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 24px auto;
+            }
+            nav {
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <img src="自画像.jpg" alt="写真" width="300"
+     style="display: block; margin: 0 auto;">
+        
+        
+        <div class="card">
+            <h2>管理人 が あらわれた！</h2>
+            <p>
+                <a href="index.html">たたかう</a>　<br>
+<a href="index.html">にげる</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
