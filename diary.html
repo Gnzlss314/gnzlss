@@ -90,6 +90,20 @@
                 gap: 24px;
             }
         }
+        .toc a {
+            display: block;
+            margin: 4px 0;
+            text-decoration: none;
+            color: #0055aa;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 80px; /* 目次からのジャンプで見やすくする */
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+        }
     </style>
 </head>
 <body>
@@ -102,7 +116,8 @@
             <a href="profile.html">プロフィール</a>
             <a href="link.html">リンク</a>
         </nav>
-        
+
+        <div class="toc">
         <a href="#d1114">2025-11-14 はじめました</a><br>
         <a href="#d1115">2025-11-15 デザインをピンクにした</a><br>
         <a href="#d1116">2025-11-16 ひゃくえむ。を観ました</a><br>
@@ -120,7 +135,9 @@
         <a href="#d1128">2025-11-28 10億の男</a><br>
         <a href="#d1129">2025-11-29 再会、別れ、27歳</a><br>
         <a href="#d1130">2025-11-30 漂流記</a><br>
-        
+        </div>
+
+        <hr>
         
         <!-- 1つめの日記 -->
         <section id="d1114">
